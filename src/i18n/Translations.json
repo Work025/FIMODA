@@ -1,0 +1,197 @@
+{
+  "UZ": {
+    "nav": {
+      "home": "Asosiy",
+      "design": "Dizayn",
+      "shop": "Do'kon",
+      "products": "Mahsulotlar"
+    },
+    "cart": {
+      "title": "Savat",
+      "empty": "Savat bo'sh",
+      "emptyDesc": "Mahsulotlar qo'shing",
+      "total": "Jami",
+      "checkout": "Buyurtma berish",
+      "remove": "O'chirish",
+      "added": "Savatga qo'shildi"
+    },
+    "profile": {
+      "title": "Profil",
+      "login": "Kirish",
+      "signup": "Ro'yxatdan o'tish",
+      "googleLogin": "Google orqali kirish",
+      "or": "yoki",
+      "email": "Email",
+      "password": "Parol",
+      "settings": "Sozlamalar",
+      "profileName": "Profil nomi",
+      "profilePhoto": "Profil rasmi",
+      "orders": "Buyurtmalarim",
+      "ordersDesc": "Sotib olingan mahsulotlar",
+      "noOrders": "Hali buyurtma yo'q",
+      "logout": "Chiqish",
+      "id": "ID",
+      "save": "Saqlash",
+      "cancel": "Bekor qilish",
+      "uploadPhoto": "Rasm yuklash"
+    },
+    "search": "Qidirish...",
+    "close": "Yopish"
+  },
+  "RU": {
+    "nav": {
+      "home": "Главная",
+      "design": "Дизайн",
+      "shop": "Магазин",
+      "products": "Товары"
+    },
+    "cart": {
+      "title": "Корзина",
+      "empty": "Корзина пуста",
+      "emptyDesc": "Добавьте товары",
+      "total": "Итого",
+      "checkout": "Оформить заказ",
+      "remove": "Удалить",
+      "added": "Добавлено в корзину"
+    },
+    "profile": {
+      "title": "Профиль",
+      "login": "Войти",
+      "signup": "Регистрация",
+      "googleLogin": "Войти через Google",
+      "or": "или",
+      "email": "Email",
+      "password": "Пароль",
+      "settings": "Настройки",
+      "profileName": "Имя профиля",
+      "profilePhoto": "Фото профиля",
+      "orders": "Мои заказы",
+      "ordersDesc": "Купленные товары",
+      "noOrders": "Заказов пока нет",
+      "logout": "Выйти",
+      "id": "ID",
+      "save": "Сохранить",
+      "cancel": "Отмена",
+      "uploadPhoto": "Загрузить фото"
+    },
+    "search": "Поиск...",
+    "close": "Закрыть"
+  },
+  "EN": {
+    "nav": {
+      "home": "Home",
+      "design": "Design",
+      "shop": "Shop",
+      "products": "Products"
+    },
+    "cart": {
+      "title": "Cart",
+      "empty": "Cart is empty",
+      "emptyDesc": "Add some products",
+      "total": "Total",
+      "checkout": "Checkout",
+      "remove": "Remove",
+      "added": "Added to cart"
+    },
+    "profile": {
+      "title": "Profile",
+      "login": "Sign In",
+      "signup": "Sign Up",
+      "googleLogin": "Continue with Google",
+      "or": "or",
+      "email": "Email",
+      "password": "Password",
+      "settings": "Settings",
+      "profileName": "Display Name",
+      "profilePhoto": "Profile Photo",
+      "orders": "My Orders",
+      "ordersDesc": "Purchased products",
+      "noOrders": "No orders yet",
+      "logout": "Sign Out",
+      "id": "ID",
+      "save": "Save",
+      "cancel": "Cancel",
+      "uploadPhoto": "Upload Photo"
+    },
+    "search": "Search...",
+    "close": "Close"
+  },
+  "TR": {
+    "nav": {
+      "home": "Ana Sayfa",
+      "design": "Tasarım",
+      "shop": "Mağaza",
+      "products": "Ürünler"
+    },
+    "cart": {
+      "title": "Sepet",
+      "empty": "Sepet boş",
+      "emptyDesc": "Ürün ekleyin",
+      "total": "Toplam",
+      "checkout": "Siparişi Tamamla",
+      "remove": "Kaldır",
+      "added": "Sepete eklendi"
+    },
+    "profile": {
+      "title": "Profil",
+      "login": "Giriş Yap",
+      "signup": "Kayıt Ol",
+      "googleLogin": "Google ile Giriş",
+      "or": "veya",
+      "email": "E-posta",
+      "password": "Şifre",
+      "settings": "Ayarlar",
+      "profileName": "Profil Adı",
+      "profilePhoto": "Profil Fotoğrafı",
+      "orders": "Siparişlerim",
+      "ordersDesc": "Satın alınan ürünler",
+      "noOrders": "Henüz sipariş yok",
+      "logout": "Çıkış",
+      "id": "ID",
+      "save": "Kaydet",
+      "cancel": "İptal",
+      "uploadPhoto": "Fotoğraf Yükle"
+    },
+    "search": "Ara...",
+    "close": "Kapat"
+  },
+  "AR": {
+    "nav": {
+      "home": "الرئيسية",
+      "design": "التصميم",
+      "shop": "المتجر",
+      "products": "المنتجات"
+    },
+    "cart": {
+      "title": "السلة",
+      "empty": "السلة فارغة",
+      "emptyDesc": "أضف منتجات",
+      "total": "المجموع",
+      "checkout": "إتمام الطلب",
+      "remove": "حذف",
+      "added": "أضيف إلى السلة"
+    },
+    "profile": {
+      "title": "الملف الشخصي",
+      "login": "تسجيل الدخول",
+      "signup": "إنشاء حساب",
+      "googleLogin": "الدخول عبر Google",
+      "or": "أو",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "settings": "الإعدادات",
+      "profileName": "اسم الملف الشخصي",
+      "profilePhoto": "صورة الملف الشخصي",
+      "orders": "طلباتي",
+      "ordersDesc": "المنتجات المشتراة",
+      "noOrders": "لا توجد طلبات بعد",
+      "logout": "تسجيل الخروج",
+      "id": "المعرف",
+      "save": "حفظ",
+      "cancel": "إلغاء",
+      "uploadPhoto": "رفع صورة"
+    },
+    "search": "بحث...",
+    "close": "إغلاق"
+  }
+}

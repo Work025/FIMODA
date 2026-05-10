@@ -1,0 +1,150 @@
+/* ═══════════════════════════════════════
+   MOBILE MENU
+   (Refined: LangSwitcher at the top)
+═══════════════════════════════════════ */
+
+.mobile-menu-btn {
+  display: none;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn.active {
+  color: var(--text-primary);
+}
+
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 305;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Yondan chiquvchi panel */
+.mobile-nav-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+  background: #000000;
+  border-right: 1px solid #1a1a1a;
+  z-index: 310;
+  transform: translateX(-100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mobile-nav-panel.open {
+  transform: translateX(0);
+}
+
+/* Panel header: LangSwitcher bilan */
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid #111;
+}
+
+.mobile-nav-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mobile-nav-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.mobile-lang-inline {
+  transform: scale(0.9); /* Bir oz kichraytirish */
+}
+
+/* Mobile menyu ichidagi LangSwitcher dizayni */
+.mobile-lang-inline .lang-btn {
+  border-color: #222;
+  height: 30px;
+  padding: 0 8px;
+  font-size: 10px;
+}
+
+.mobile-nav-close {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Nav links */
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.mobile-nav-links::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 56px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #888;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: #fff;
+  background: #0a0a0a;
+  padding-left: 32px;
+}
+
+.mobile-nav-footer-minimal {
+  height: 20px;
+  background: #000;
+}
+
+@media (max-width: 900px) {
+  .mobile-menu-btn {
+    display: flex;
+  }
+}

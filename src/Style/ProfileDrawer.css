@@ -1,0 +1,390 @@
+/* ═══════════════════════════════════════
+   PROFILE DRAWER
+   (Header.css dan ajratib olindi)
+═══════════════════════════════════════ */
+
+.profile-id {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #555;
+  font-family: 'DM Sans', monospace;
+}
+
+.auth-tabs {
+  display: flex;
+  border-bottom: 0.5px solid var(--border-color);
+  margin-bottom: 24px;
+}
+
+.auth-tabs button {
+  flex: 1;
+  height: 40px;
+  background: transparent;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  margin-bottom: -0.5px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.auth-tabs button.active {
+  color: var(--text-primary);
+  border-bottom-color: var(--text-primary);
+}
+
+.google-btn {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: transparent;
+  border: 0.5px solid var(--border-color);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  margin-bottom: 20px;
+}
+
+.google-btn:hover {
+  background: var(--card-bg);
+  border-color: #555;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.auth-divider span {
+  flex: 1;
+  height: 0.5px;
+  background: var(--border-color);
+}
+
+.auth-divider p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 14px;
+  background: var(--card-bg);
+  border: 0.5px solid var(--border-color);
+  transition: border-color 0.2s;
+}
+
+.auth-field:focus-within {
+  border-color: #555;
+}
+
+.auth-field svg {
+  color: #444;
+  flex-shrink: 0;
+}
+
+.auth-field input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+}
+
+.auth-field input::placeholder {
+  color: #444;
+}
+
+.auth-error {
+  font-size: 11px;
+  color: #e55;
+  letter-spacing: 0.3px;
+}
+
+.auth-submit-btn {
+  width: 100%;
+  height: 44px;
+  background: var(--text-primary);
+  color: var(--bg-color);
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 4px;
+}
+
+.auth-submit-btn:hover {
+  background: #ddd;
+}
+
+.auth-submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.profile-tabs {
+  display: flex;
+  border-bottom: 0.5px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.profile-tabs button {
+  flex: 1;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  margin-bottom: -0.5px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.profile-tabs button.active {
+  color: var(--text-primary);
+  border-bottom-color: var(--text-primary);
+}
+
+.profile-info-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-avatar-wrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 8px;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 0.5px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  overflow: hidden;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-upload-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--text-primary);
+  color: var(--bg-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-field label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.profile-field input {
+  height: 40px;
+  padding: 0 14px;
+  background: var(--card-bg);
+  border: 0.5px solid var(--border-color);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.profile-field input:focus {
+  border-color: #555;
+}
+
+.profile-field--readonly input {
+  color: #555;
+  cursor: default;
+}
+
+.save-msg {
+  font-size: 11px;
+  color: #4caf50;
+  letter-spacing: 1px;
+}
+
+.save-btn {
+  height: 40px;
+  background: var(--text-primary);
+  color: var(--bg-color);
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.save-btn:hover {
+  background: #ddd;
+}
+
+.orders-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--card-bg);
+  border: 0.5px solid var(--border-color);
+}
+
+.order-id {
+  font-size: 10px;
+  color: #444;
+  font-family: monospace;
+}
+
+.order-name {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.order-price {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.settings-hint {
+  font-size: 12px;
+  color: #444;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.profile-footer-id {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #444;
+}
+
+.profile-footer-id strong {
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+
+.logout-btn {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  border: 0.5px solid #333;
+  color: #666;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.logout-btn:hover {
+  color: #e55;
+  border-color: #e55;
+}
+
+@media (max-width: 380px) {
+  .drawer-body {
+    padding: 16px;
+  }
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .auth-tabs button,
+  .profile-tabs button {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+  .google-btn,
+  .auth-field,
+  .auth-submit-btn,
+  .save-btn,
+  .logout-btn {
+    height: 40px;
+    font-size: 10px;
+  }
+}
