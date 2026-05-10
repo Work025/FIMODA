@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Button from '../Button/Button';
 import { useLang } from '../../Context/LangContext';
 import '../../Style/Hero.css';
@@ -49,7 +49,7 @@ export default function Hero() {
     setAnimKey((k) => k + 1);
   }
 
-  function startTimer() {
+  const startTimer = useCallback(() => {
     timerRef.current = setInterval(() => {
       setIndex((prev) => {
         const next = (prev + 1) % slides.length;
@@ -57,7 +57,7 @@ export default function Hero() {
         return next;
       });
     }, 5000);
-  }
+  }, [slides.length]);
 
   function resetTimer() {
     clearInterval(timerRef.current);
@@ -67,7 +67,7 @@ export default function Hero() {
   useEffect(() => {
     startTimer();
     return () => clearInterval(timerRef.current);
-  }, []);
+  }, [startTimer]);
 
   function handleDotClick(idx) {
     goTo(idx);

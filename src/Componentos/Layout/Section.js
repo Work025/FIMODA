@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiPlus, FiShoppingBag } from 'react-icons/fi';
+import { FiPlus } from 'react-icons/fi';
 import { useCart } from '../../Context/CartContext';
 import { useLang } from '../../Context/LangContext';
 import '../../Style/Section.css';
@@ -20,7 +20,7 @@ const PRODUCTS = [
 
 export default function Section() {
   const { addItem } = useCart();
-  const { t } = useLang();
+  useLang();
 
   return (
     <section className="products-section">

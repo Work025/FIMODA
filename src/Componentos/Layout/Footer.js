@@ -16,24 +16,24 @@ export default function Footer() {
             Zamonaviy uslub va sifat uyg'unligi. Biz bilan har doim trendda bo'ling.
           </p>
           <div className="footer-socials">
-            <a href="#"><FiInstagram /></a>
-            <a href="#"><FiFacebook /></a>
-            <a href="#"><FiTwitter /></a>
+            <a href="/"><FiInstagram /></a>
+            <a href="/"><FiFacebook /></a>
+            <a href="/"><FiTwitter /></a>
           </div>
         </div>
 
         <div className="footer-links">
           <div className="link-group">
             <h4>Xaridorlarga</h4>
-            <a href="#">Yetkazib berish</a>
-            <a href="#">To'lov usullari</a>
-            <a href="#">Qaytarish</a>
+            <a href="/">Yetkazib berish</a>
+            <a href="/">To'lov usullari</a>
+            <a href="/">Qaytarish</a>
           </div>
           <div className="link-group">
             <h4>Kompaniya</h4>
-            <a href="#">Biz haqimizda</a>
-            <a href="#">Do'konlar</a>
-            <a href="#">Aloqa</a>
+            <a href="/">Biz haqimizda</a>
+            <a href="/">Do'konlar</a>
+            <a href="/">Aloqa</a>
           </div>
         </div>
 
